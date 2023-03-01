@@ -39,6 +39,10 @@
     "message": "No roots"
 }
 ```
+Для точной арифметики расчет корней квадратного уравнения ведется в формате _BigDecimal_. Выбор такого типа связан с
+неточным представлением в компьютерах чисел с плавающей точкой в двоичном виде. Типы _double_ и _float_ при вычислениях 
+могут возвращать неточные результаты вычислений, в то время как _BigDecimal_ позволяет задавать точность результата и
+управлять округлением.
 ### База данных
 При старте приложения система миграции БД _Flyway_ создает в БД таблицу `equation` с помощью _SQL_-скрипта [V1__ordersData.sql](https://github.com/PavelNaymovets/interview_task_quadratic_equation/blob/master/src/main/resources/db/migration/V1__ordersData.sql).
 
@@ -46,8 +50,10 @@
 * _EquationEntity_ (таблица `equation`) - таблица с корнями и коэффициентами кв. уравнения;
 * 
 В случае, если корни уравнения есть, в in-memory БД в таблицу `equation` сохраняются коэффициенты и корни кв. уравнения:
+
 ![Image alt](https://github.com/PavelNaymovets/interview_task_quadratic_equation/blob/master/image/%D0%91%D0%94.PNG)
-Иначе пользователю возвращается ошибка и записи в БД не заносятся.
+
+Иначе пользователю возвращается ошибка и запись в БД не заносится.
 ### Тесты
 В `src/test/` есть несколько простых юнит-тестов на пару позитивных сценариев (см. [тут](https://github.com/PavelNaymovets/interview_task_quadratic_equation/blob/master/src/test/java/com/interview/task/quadraticEquation/TaskApplicationTests.java)).
 ### Запуск приложения
