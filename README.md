@@ -55,7 +55,7 @@ _MathContext_ и управлять округлением.
 
 Иначе пользователю возвращается ошибка и запись в БД не заносится.
 ### Тесты
-В `src/test/` есть несколько простых естов на пару позитивных сценариев (см. [тут](https://github.com/PavelNaymovets/interview_task_quadratic_equation/blob/master/src/test/java/com/interview/task/quadraticEquation/TaskApplicationTests.java)).
+В `src/test/` есть несколько простых тестов на пару позитивных сценариев (см. [тут](https://github.com/PavelNaymovets/interview_task_quadratic_equation/blob/master/src/test/java/com/interview/task/quadraticEquation/TaskApplicationTests.java)).
 ### Запуск приложения
 * Приложение запускается из класса _[QuadraticEquationApplication](https://github.com/PavelNaymovets/interview_task_quadratic_equation/blob/master/src/main/java/com/interview/task/quadraticEquation/QuadraticEquationApplication.java)_.
 * Тесты запускаются из класса _[TaskApplicationTests](https://github.com/PavelNaymovets/interview_task_quadratic_equation/blob/master/src/test/java/com/interview/task/quadraticEquation/TaskApplicationTests.java)_ или через консоль 
