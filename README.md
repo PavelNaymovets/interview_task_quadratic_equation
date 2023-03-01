@@ -44,12 +44,16 @@
 
 БД поддерживает веб-консоль: `http://localhost:8080/task/h2-console`. _Datasource_: `jdbc:h2:mem:mydatabase`. Маппинг сущности:
 * _EquationEntity_ (таблица `equation`) - таблица с корнями и коэффициентами кв. уравнения;
+* 
+В случае, если корни уравнения есть, в in-memory БД в таблицу `equation` сохраняются коэффициенты и корни кв. уравнения:
+
+Иначе пользователю возвращается ошибка и записи в БД не заносятся.
 ### Тесты
 В `src/test/` есть несколько простых юнит-тестов на пару позитивных сценариев (см. [тут](https://github.com/PavelNaymovets/interview_task_quadratic_equation/blob/master/src/test/java/com/interview/task/quadraticEquation/TaskApplicationTests.java)).
-### Заупск приложения
-Запуск приложения из класса _[QuadraticEquationApplication](https://github.com/PavelNaymovets/interview_task_quadratic_equation/blob/master/src/main/java/com/interview/task/quadraticEquation/QuadraticEquationApplication.java)_.
-Запуск тестов из класса _[TaskApplicationTests](https://github.com/PavelNaymovets/interview_task_quadratic_equation/blob/master/src/test/java/com/interview/task/quadraticEquation/TaskApplicationTests.java)_, или через консоль 
-командой `mwnw test`.
+### Запуск приложения
+* Запуск приложения из класса _[QuadraticEquationApplication](https://github.com/PavelNaymovets/interview_task_quadratic_equation/blob/master/src/main/java/com/interview/task/quadraticEquation/QuadraticEquationApplication.java)_.
+* Запуск тестов из класса _[TaskApplicationTests](https://github.com/PavelNaymovets/interview_task_quadratic_equation/blob/master/src/test/java/com/interview/task/quadraticEquation/TaskApplicationTests.java)_, или через консоль 
+командой `mvnw test`.
 ### Логирование
 Приложение логирует свои действия в консоль. В том числе запросы, которые формируются к БД с помощью Hibernate в
 соответствии с конфигурационным файлом проекта [application.yaml](https://github.com/PavelNaymovets/interview_task_quadratic_equation/blob/master/src/main/resources/application.yaml).
