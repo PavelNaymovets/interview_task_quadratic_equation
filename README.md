@@ -57,8 +57,8 @@ _MathContext_ и управлять округлением.
 ### Тесты
 В `src/test/` есть несколько простых юнит-тестов на пару позитивных сценариев (см. [тут](https://github.com/PavelNaymovets/interview_task_quadratic_equation/blob/master/src/test/java/com/interview/task/quadraticEquation/TaskApplicationTests.java)).
 ### Запуск приложения
-* Запуск приложения из класса _[QuadraticEquationApplication](https://github.com/PavelNaymovets/interview_task_quadratic_equation/blob/master/src/main/java/com/interview/task/quadraticEquation/QuadraticEquationApplication.java)_.
-* Запуск тестов из класса _[TaskApplicationTests](https://github.com/PavelNaymovets/interview_task_quadratic_equation/blob/master/src/test/java/com/interview/task/quadraticEquation/TaskApplicationTests.java)_, или через консоль 
+* Приложение запускается из класса _[QuadraticEquationApplication](https://github.com/PavelNaymovets/interview_task_quadratic_equation/blob/master/src/main/java/com/interview/task/quadraticEquation/QuadraticEquationApplication.java)_.
+* Тесты запускаются из класса _[TaskApplicationTests](https://github.com/PavelNaymovets/interview_task_quadratic_equation/blob/master/src/test/java/com/interview/task/quadraticEquation/TaskApplicationTests.java)_ или через консоль 
 командой `mvnw test`.
 ### Логирование
 Приложение логирует свои действия в консоль. В том числе запросы, которые формируются к БД с помощью Hibernate в
