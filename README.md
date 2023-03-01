@@ -47,8 +47,8 @@ _MathContext_ и управлять округлением.
 При старте приложения система миграции БД _Flyway_ создает в БД таблицу `equation` с помощью _SQL_-скрипта [V1__ordersData.sql](https://github.com/PavelNaymovets/interview_task_quadratic_equation/blob/master/src/main/resources/db/migration/V1__ordersData.sql).
 
 БД поддерживает веб-консоль: `http://localhost:8080/task/h2-console`. _Datasource_: `jdbc:h2:mem:mydatabase`. Маппинг сущности:
-* _EquationEntity_ (таблица `equation`) - таблица с корнями и коэффициентами кв. уравнения;
-* 
+* _[EquationEntity](https://github.com/PavelNaymovets/interview_task_quadratic_equation/blob/master/src/main/java/com/interview/task/quadraticEquation/entity/EquationEntity.java)_ (таблица `equation`) - таблица с корнями и коэффициентами кв. уравнения;
+
 В случае, если корни уравнения есть, в in-memory БД в таблицу `equation` сохраняются коэффициенты и корни кв. уравнения:
 
 ![Image alt](https://github.com/PavelNaymovets/interview_task_quadratic_equation/blob/master/image/%D0%91%D0%94.PNG)
